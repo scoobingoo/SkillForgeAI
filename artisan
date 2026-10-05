@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+// SPDX-License-Identifier: Apache-2.0
+// Tập tin khởi chạy dòng lệnh Artisan của Laravel
+
+use Symfony\Component\Console\Input\ArgvInput;
+
+define('LARAVEL_START', microtime(true));
+
+// Nạp Composer autoloader
+require __DIR__.'/vendor/autoload.php';
+
+// Khởi tạo ứng dụng Laravel và xử lý lệnh CLI
+$status = (require_once __DIR__.'/bootstrap/app.php')
+    ->handleCommand(new ArgvInput);
+
+exit($status);

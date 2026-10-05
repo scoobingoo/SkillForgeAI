@@ -1,0 +1,75 @@
+{
+    "name": "scoobingoo/skillforge-ai",
+    "type": "project",
+    "description": "SkillForge AI — Nền tảng phân tích khoảng cách kỹ năng (Skill Gap) có đối chiếu bằng chứng, gợi ý lộ trình học tập Hybrid RAG và luyện phỏng vấn kỹ thuật thích ứng cùng Local AI (Ollama).",
+    "keywords": ["laravel", "skillforge-ai", "career-intelligence", "ollama", "pgvector", "hybrid-rag", "open-source"],
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "laravel/tinker": "^2.9",
+        "smalot/pdfparser": "^2.11",
+        "symfony/yaml": "^7.0",
+        "league/commonmark": "^2.5"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/pint": "^1.13",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "test": "phpunit",
+        "lint": "pint --test",
+        "lint:fix": "pint",
+        "db:migrate": "@php artisan migrate --force",
+        "db:seed": "@php artisan db:seed --force",
+        "ingest": "@php artisan app:ingest",
+        "eval": "@php artisan app:eval"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3.15"
+        },
+        "audit": {
+            "block-insecure": false
+        },
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
