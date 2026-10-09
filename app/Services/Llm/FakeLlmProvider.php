@@ -70,7 +70,7 @@ class FakeLlmProvider implements LlmProviderInterface
 
     public function generateObject(array $jsonSchema, callable $validator, array $messages, array $opts = []): array
     {
-        $maxRetries = 1;
+        $maxRetries = 2;
         $workingMessages = $messages;
         $lastError = '';
 
