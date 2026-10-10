@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: CC-BY-4.0
+slug: fullstack
+title: Kỹ sư Fullstack Web (Laravel + Tailwind CSS)
+description: Phát triển trọn vẹn sản phẩm Web từ giao diện HTML/Blade/Tailwind CSS đến hệ thống Backend Laravel, PostgreSQL và AI.
+skills:
+  - slug: php
+    level: intermediate
+    importance: required
+    evidence: "Nắm vững ngôn ngữ PHP 8+ và kiến trúc ứng dụng Web hiện đại."
+  - slug: laravel
+    level: advanced
+    importance: required
+    evidence: "Thành thạo xây dựng ứng dụng Fullstack với Laravel, Blade Template, Eloquent ORM và Queue."
+  - slug: html5
+    level: intermediate
+    importance: required
+    evidence: "Xây dựng giao diện HTML5 chuẩn ngữ nghĩa, thân thiện và tối ưu trải nghiệm người dùng."
+  - slug: tailwind-css
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng thành thạo Tailwind CSS để thiết kế giao diện Responsive và hỗ trợ Dark Mode."
+  - slug: javascript
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng tốt JavaScript / Alpine.js để xử lý tương tác động, biểu đồ và gọi API bất đồng bộ."
+  - slug: postgresql
+    level: intermediate
+    importance: required
+    evidence: "Thiết kế cơ sở dữ liệu PostgreSQL, quản lý migration và tối ưu truy vấn dữ liệu."
+  - slug: rest-api
+    level: intermediate
+    importance: required
+    evidence: "Xây dựng và tích hợp RESTful API chuẩn hoá giữa giao diện và máy chủ."
+  - slug: docker
+    level: intermediate
+    importance: required
+    evidence: "Đóng gói và triển khai hệ thống bằng Docker Compose chỉ với một câu lệnh."
+  - slug: unit-testing
+    level: intermediate
+    importance: nice_to_have
+    evidence: "Ưu tiên ứng viên có thói quen viết kiểm thử tự động (PHPUnit) và cấu hình CI/CD."

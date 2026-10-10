@@ -1,0 +1,13 @@
+HỌ VÀ TÊN: TRẦN THỊ MAI ANH
+VỊ TRÍ ỨNG TUYỂN: FRONTEND DEVELOPER (INTERN / JUNIOR)
+Email: maianh.tran@example.org | Điện thoại: +84 987 654 321
+
+MỤC TIÊU NGHỀ NGHIỆP
+Sinh viên năm 3 ngành Khoa học Máy tính định hướng phát triển chuyên sâu mảng Frontend Web hiện đại.
+
+KỸ NĂNG KỸ THUẬT
+- HTML5 & CSS3: Thành thạo (advanced) xây dựng giao diện semantic HTML5, CSS Grid, Flexbox, tối ưu hiển thị mobile-first từ 375px.
+- Tailwind CSS: Có 1 năm kinh nghiệm sử dụng Tailwind CSS (intermediate) thiết kế giao diện có Dark Mode.
+- JavaScript: Thành thạo JavaScript (advanced), làm việc tốt với bất đồng bộ Async/Await và REST API.
+- React: Đã học và làm 2 dự án cá nhân với React.js ở mức cơ bản (beginner).
+- Quản lý mã nguồn: Sử dụng Git và GitHub thường xuyên để quản lý nhánh và tạo Pull Request.

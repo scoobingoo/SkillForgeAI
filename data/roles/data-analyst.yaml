@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: CC-BY-4.0
+slug: data-analyst
+title: Chuyên viên Phân tích Dữ liệu (Data Analyst)
+description: Truy vấn, làm sạch, phân tích dữ liệu lớn và xây dựng báo cáo trực quan phục vụ ra quyết định sản phẩm.
+skills:
+  - slug: sql
+    level: advanced
+    importance: required
+    evidence: "Thành thạo SQL nâng cao (CTE, Window Functions, агрегация phức tạp) trên cơ sở dữ liệu quan hệ."
+  - slug: postgresql
+    level: intermediate
+    importance: required
+    evidence: "Kinh nghiệm khai thác dữ liệu trên PostgreSQL và tối ưu truy vấn báo cáo."
+  - slug: python
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng Python để tự động hoá quy trình xử lý, làm sạch và biến đổi dữ liệu."
+  - slug: data-analysis
+    level: advanced
+    importance: required
+    evidence: "Thành thạo phân tích khám phá (EDA) với Pandas/NumPy và tìm ra insight hành vi người dùng."
+  - slug: bi-tools
+    level: intermediate
+    importance: required
+    evidence: "Xây dựng dashboard trực quan bằng Power BI, Tableau hoặc Metabase."
+  - slug: statistics
+    level: intermediate
+    importance: required
+    evidence: "Nắm vững xác suất thống kê, kiểm định giả thuyết và đánh giá kết quả A/B Testing."
+  - slug: communication
+    level: intermediate
+    importance: nice_to_have
+    evidence: "Kỹ năng trình bày báo cáo dữ liệu mạch lạc cho các bên liên quan (Data Storytelling)."

@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: CC-BY-4.0
+slug: backend
+title: Kỹ sư Backend PHP / Laravel (Backend Developer)
+description: Thiết kế kiến trúc API, cơ sở dữ liệu quan hệ PostgreSQL, hàng đợi bất đồng bộ và tích hợp dịch vụ AI mở.
+skills:
+  - slug: php
+    level: advanced
+    importance: required
+    evidence: "Thành thạo PHP 8.2+, lập trình hướng đối tượng (OOP), strict typing và xử lý ngoại lệ chuẩn."
+  - slug: laravel
+    level: advanced
+    importance: required
+    evidence: "Làm chủ Laravel Framework (Eloquent ORM, Migrations, Service Container, Middleware, Queue)."
+  - slug: postgresql
+    level: intermediate
+    importance: required
+    evidence: "Kinh nghiệm làm việc với PostgreSQL, thiết kế bảng chuẩn hoá, tối ưu truy vấn và chỉ mục."
+  - slug: rest-api
+    level: advanced
+    importance: required
+    evidence: "Thiết kế RESTful API chuẩn mực, phân trang, mã lỗi nhất quán và tài liệu hoá OpenAPI."
+  - slug: queue-workers
+    level: intermediate
+    importance: required
+    evidence: "Xây dựng và vận hành Background Jobs / Queue Worker xử lý tác vụ nặng bất đồng bộ."
+  - slug: unit-testing
+    level: intermediate
+    importance: required
+    evidence: "Viết Unit Test và Feature Test với PHPUnit đạt độ bao phủ cao cho các hàm tính toán cốt lõi."
+  - slug: docker
+    level: intermediate
+    importance: required
+    evidence: "Biết đóng gói ứng dụng bằng Dockerfile multi-stage và cấu hình Docker Compose."
+  - slug: authentication
+    level: intermediate
+    importance: nice_to_have
+    evidence: "Ưu tiên ứng viên nắm vững bảo mật OWASP, chống SQL Injection, XSS và ẩn thông tin nhạy cảm (PII)."
+  - slug: vector-search
+    level: beginner
+    importance: nice_to_have
+    evidence: "Điểm cộng nếu có kinh nghiệm tích hợp pgvector, RAG và gọi mô hình ngôn ngữ lớn (Ollama/LLM)."

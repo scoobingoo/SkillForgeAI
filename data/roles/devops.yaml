@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: CC-BY-4.0
+slug: devops
+title: Kỹ sư DevOps / Cloud Infrastructure
+description: Tự động hoá quy trình CI/CD, đóng gói container, vận hành hạ tầng đám mây và giám sát độ tin cậy hệ thống.
+skills:
+  - slug: linux
+    level: advanced
+    importance: required
+    evidence: "Thành thạo quản trị hệ điều hành Linux (Ubuntu/Alpine), mạng máy tính và viết Bash script."
+  - slug: docker
+    level: advanced
+    importance: required
+    evidence: "Chuyên sâu về Docker, viết multi-stage Dockerfile tối ưu dung lượng và bảo mật non-root."
+  - slug: kubernetes
+    level: intermediate
+    importance: required
+    evidence: "Triển khai và quản lý cụm Kubernetes (Deployment, Service, Ingress, Helm Charts)."
+  - slug: ci-cd
+    level: advanced
+    importance: required
+    evidence: "Thiết kế pipeline CI/CD tự động kiểm thử, quét bảo mật và phát hành image lên GHCR với GitHub Actions."
+  - slug: nginx
+    level: intermediate
+    importance: required
+    evidence: "Cấu hình Nginx làm Reverse Proxy, cân bằng tải và thiết lập bảo mật TLS/HTTP headers."
+  - slug: monitoring
+    level: intermediate
+    importance: required
+    evidence: "Thiết lập hệ thống giám sát Prometheus, Grafana và thu thập structured logs."
+  - slug: cloud-computing
+    level: intermediate
+    importance: nice_to_have
+    evidence: "Ưu tiên ứng viên có kinh nghiệm vận hành dịch vụ trên AWS, GCP hoặc Azure."
+  - slug: infrastructure-as-code
+    level: beginner
+    importance: nice_to_have
+    evidence: "Điểm cộng nếu biết quản lý hạ tầng bằng mã nguồn với Terraform hoặc Ansible."
