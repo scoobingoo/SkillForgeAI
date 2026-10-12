@@ -1,0 +1,15 @@
+TUYỂN DỤNG: KỸ SƯ FULLSTACK / BACKEND LARAVEL (JUNIOR - MIDDLE)
+
+Mô tả công việc & Yêu cầu ứng viên:
+1. Yêu cầu bắt buộc (Required):
+- Thành thạo ngôn ngữ PHP (advanced, tối thiểu 2 năm kinh nghiệm với PHP 8.2+).
+- Làm chủ Laravel Framework ở mức chuyên sâu (advanced): nắm vững Eloquent ORM, Queue Worker và kiến trúc Service.
+- Có kinh nghiệm làm việc với cơ sở dữ liệu PostgreSQL (intermediate) và tối ưu hoá truy vấn SQL.
+- Thiết kế và xây dựng REST API chuẩn mực (intermediate).
+- Sử dụng thành thạo Tailwind CSS (intermediate) và HTML5 để xây dựng giao diện Web Blade.
+- Biết đóng gói ứng dụng với Docker và Docker Compose (intermediate).
+- Viết Unit Testing tự động bằng PHPUnit (intermediate).
+
+2. Điểm cộng ưu tiên (Nice to have):
+- Ưu tiên ứng viên có kinh nghiệm cấu hình CI/CD với GitHub Actions (beginner).
+- Lợi thế nếu hiểu biết về tìm kiếm ngữ nghĩa với pgvector / RAG (beginner).

@@ -1,0 +1,340 @@
+# SPDX-License-Identifier: CC-BY-4.0
+# Danh mục kỹ năng chuẩn (Skill Taxonomy) thuộc 8 nhóm: frontend, backend, mobile, data, devops, cloud, testing, soft-skill
+
+skills:
+  # === FRONTEND ===
+  - slug: html5
+    name: HTML5
+    category: frontend
+    aliases: ["html", "html 5", "semantic html"]
+    parent: null
+    related: ["css3", "javascript", "accessibility"]
+
+  - slug: css3
+    name: CSS3
+    category: frontend
+    aliases: ["css", "css 3", "flexbox", "css grid"]
+    parent: null
+    related: ["html5", "tailwind-css", "sass"]
+
+  - slug: tailwind-css
+    name: Tailwind CSS
+    category: frontend
+    aliases: ["tailwind", "tailwindcss"]
+    parent: css3
+    related: ["css3", "html5", "blade"]
+
+  - slug: javascript
+    name: JavaScript
+    category: frontend
+    aliases: ["js", "es6", "ecmascript", "vanilla js"]
+    parent: null
+    related: ["typescript", "react", "vue", "alpinejs"]
+
+  - slug: typescript
+    name: TypeScript
+    category: frontend
+    aliases: ["ts"]
+    parent: javascript
+    related: ["javascript", "react", "nextjs", "nodejs"]
+
+  - slug: react
+    name: React
+    category: frontend
+    aliases: ["reactjs", "react.js", "react hooks"]
+    parent: javascript
+    related: ["nextjs", "typescript", "redux"]
+
+  - slug: nextjs
+    name: Next.js
+    category: frontend
+    aliases: ["next.js", "next", "nextjs app router"]
+    parent: react
+    related: ["react", "typescript", "tailwind-css"]
+
+  - slug: vue
+    name: Vue.js
+    category: frontend
+    aliases: ["vuejs", "vue.js", "vue 3"]
+    parent: javascript
+    related: ["nuxt", "pinia", "javascript"]
+
+  - slug: alpinejs
+    name: Alpine.js
+    category: frontend
+    aliases: ["alpine", "alpine.js"]
+    parent: javascript
+    related: ["blade", "tailwind-css", "laravel"]
+
+  - slug: state-management
+    name: State Management
+    category: frontend
+    aliases: ["redux", "zustand", "pinia", "tanstack query", "react query"]
+    parent: javascript
+    related: ["react", "vue"]
+
+  - slug: web-accessibility
+    name: Web Accessibility (a11y)
+    category: frontend
+    aliases: ["a11y", "wcag", "aria"]
+    parent: html5
+    related: ["html5", "css3"]
+
+  # === BACKEND ===
+  - slug: php
+    name: PHP
+    category: backend
+    aliases: ["php8", "php 8", "php 8.2", "php 8.3"]
+    parent: null
+    related: ["laravel", "symfony", "composer"]
+
+  - slug: laravel
+    name: Laravel
+    category: backend
+    aliases: ["laravel framework", "laravel 11", "eloquent", "blade"]
+    parent: php
+    related: ["php", "postgresql", "rest-api"]
+
+  - slug: nodejs
+    name: Node.js
+    category: backend
+    aliases: ["node", "node.js", "express", "fastify"]
+    parent: javascript
+    related: ["nestjs", "typescript", "rest-api"]
+
+  - slug: nestjs
+    name: NestJS
+    category: backend
+    aliases: ["nest", "nest.js"]
+    parent: nodejs
+    related: ["nodejs", "typescript", "postgresql"]
+
+  - slug: python
+    name: Python
+    category: backend
+    aliases: ["python3", "python 3", "fastapi", "django"]
+    parent: null
+    related: ["sql", "data-analysis", "machine-learning"]
+
+  - slug: java
+    name: Java
+    category: backend
+    aliases: ["java 17", "java 21", "spring boot", "spring"]
+    parent: null
+    related: ["postgresql", "microservices"]
+
+  - slug: golang
+    name: Go (Golang)
+    category: backend
+    aliases: ["go", "golang", "gin"]
+    parent: null
+    related: ["docker", "kubernetes", "microservices"]
+
+  - slug: rest-api
+    name: RESTful API Design
+    category: backend
+    aliases: ["rest api", "restful", "openapi", "swagger", "http api"]
+    parent: null
+    related: ["laravel", "nodejs", "authentication"]
+
+  - slug: graphql
+    name: GraphQL
+    category: backend
+    aliases: ["apollo", "graphql api"]
+    parent: rest-api
+    related: ["rest-api", "typescript"]
+
+  - slug: authentication
+    name: Authentication & Security
+    category: backend
+    aliases: ["jwt", "oauth2", "sanctum", "rbac", "owasp"]
+    parent: null
+    related: ["rest-api", "laravel"]
+
+  - slug: queue-workers
+    name: Message Queue & Background Jobs
+    category: backend
+    aliases: ["queue", "background jobs", "laravel queue", "pg-boss", "rabbitmq", "kafka"]
+    parent: null
+    related: ["laravel", "postgresql"]
+
+  # === DATA & DATABASE ===
+  - slug: sql
+    name: SQL
+    category: data
+    aliases: ["truy van sql", "ansi sql", "relational database"]
+    parent: null
+    related: ["postgresql", "mysql", "data-analysis"]
+
+  - slug: postgresql
+    name: PostgreSQL
+    category: data
+    aliases: ["postgres", "pgsql", "pgvector"]
+    parent: sql
+    related: ["sql", "database-design", "vector-search"]
+
+  - slug: mysql
+    name: MySQL
+    category: data
+    aliases: ["mariadb"]
+    parent: sql
+    related: ["sql", "php", "laravel"]
+
+  - slug: database-design
+    name: Database Modeling & Optimization
+    category: data
+    aliases: ["indexing", "query optimization", "schema design", "migration"]
+    parent: sql
+    related: ["postgresql", "mysql"]
+
+  - slug: vector-search
+    name: Vector Search & RAG
+    category: data
+    aliases: ["pgvector", "rag", "hybrid search", "embeddings", "bge-m3"]
+    parent: postgresql
+    related: ["postgresql", "python"]
+
+  - slug: data-analysis
+    name: Data Analysis
+    category: data
+    aliases: ["phan tich du lieu", "pandas", "numpy", "exploratory data analysis", "eda"]
+    parent: python
+    related: ["python", "sql", "bi-tools"]
+
+  - slug: bi-tools
+    name: BI & Data Visualization
+    category: data
+    aliases: ["power bi", "tableau", "metabase", "looker", "data visualization"]
+    parent: null
+    related: ["sql", "data-analysis"]
+
+  - slug: statistics
+    name: Statistics & A/B Testing
+    category: data
+    aliases: ["xac suat thong ke", "ab testing", "hypothesis testing"]
+    parent: null
+    related: ["data-analysis", "python"]
+
+  # === DEVOPS & INFRASTRUCTURE ===
+  - slug: git
+    name: Git & Version Control
+    category: devops
+    aliases: ["git", "github", "gitlab", "git flow", "conventional commits"]
+    parent: null
+    related: ["ci-cd"]
+
+  - slug: docker
+    name: Docker & Containerization
+    category: devops
+    aliases: ["docker", "dockerfile", "docker compose", "docker-compose", "containers"]
+    parent: null
+    related: ["kubernetes", "linux", "ci-cd"]
+
+  - slug: kubernetes
+    name: Kubernetes
+    category: devops
+    aliases: ["k8s", "helm", "kubectl"]
+    parent: docker
+    related: ["docker", "cloud-computing", "monitoring"]
+
+  - slug: ci-cd
+    name: CI/CD Pipelines
+    category: devops
+    aliases: ["ci/cd", "github actions", "gitlab ci", "jenkins"]
+    parent: null
+    related: ["git", "docker", "automated-testing"]
+
+  - slug: linux
+    name: Linux & Shell Scripting
+    category: devops
+    aliases: ["linux", "ubuntu", "bash", "shell script", "posix"]
+    parent: null
+    related: ["docker", "nginx"]
+
+  - slug: nginx
+    name: Nginx & Reverse Proxy
+    category: devops
+    aliases: ["nginx", "reverse proxy", "load balancer"]
+    parent: linux
+    related: ["linux", "docker"]
+
+  - slug: monitoring
+    name: Observability & Monitoring
+    category: devops
+    aliases: ["prometheus", "grafana", "elk", "structured logging", "opentelemetry"]
+    parent: null
+    related: ["kubernetes", "linux"]
+
+  - slug: infrastructure-as-code
+    name: Infrastructure as Code (IaC)
+    category: devops
+    aliases: ["terraform", "ansible", "pulumi"]
+    parent: null
+    related: ["cloud-computing", "kubernetes"]
+
+  # === CLOUD ===
+  - slug: cloud-computing
+    name: Cloud Platforms (AWS / GCP / Azure)
+    category: cloud
+    aliases: ["aws", "amazon web services", "gcp", "google cloud", "azure"]
+    parent: null
+    related: ["docker", "kubernetes", "infrastructure-as-code"]
+
+  - slug: serverless
+    name: Serverless & Object Storage
+    category: cloud
+    aliases: ["s3", "aws lambda", "cloudflare workers"]
+    parent: cloud-computing
+    related: ["cloud-computing"]
+
+  # === MOBILE ===
+  - slug: react-native
+    name: React Native
+    category: mobile
+    aliases: ["expo", "react native"]
+    parent: react
+    related: ["react", "typescript"]
+
+  - slug: flutter
+    name: Flutter & Dart
+    category: mobile
+    aliases: ["flutter", "dart"]
+    parent: null
+    related: ["rest-api"]
+
+  # === TESTING ===
+  - slug: unit-testing
+    name: Unit & Integration Testing
+    category: testing
+    aliases: ["unit test", "unit testing", "phpunit", "pest", "vitest", "jest", "tdd"]
+    parent: null
+    related: ["e2e-testing", "ci-cd"]
+
+  - slug: e2e-testing
+    name: End-to-End (E2E) Testing
+    category: testing
+    aliases: ["playwright", "cypress", "selenium", "e2e"]
+    parent: unit-testing
+    related: ["unit-testing", "ci-cd"]
+
+  # === SOFT SKILLS ===
+  - slug: problem-solving
+    name: Giải quyết vấn đề & Tư duy hệ thống
+    category: soft-skill
+    aliases: ["problem solving", "system thinking", "debugging", "analytical thinking"]
+    parent: null
+    related: ["communication", "agile-scrum"]
+
+  - slug: communication
+    name: Giao tiếp kỹ thuật & Tài liệu hoá
+    category: soft-skill
+    aliases: ["technical writing", "documentation", "communication", "thuyet trinh"]
+    parent: null
+    related: ["agile-scrum"]
+
+  - slug: agile-scrum
+    name: Làm việc nhóm theo Agile / Scrum
+    category: soft-skill
+    aliases: ["agile", "scrum", "kanban", "teamwork"]
+    parent: null
+    related: ["git", "communication"]

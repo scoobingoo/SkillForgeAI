@@ -1,0 +1,8 @@
+TUYỂN DỤNG: FRONTEND WEB ENGINEER
+
+Yêu cầu chuyên môn:
+- Thành thạo HTML5 và CSS3 ở mức chuyên sâu (advanced), hỗ trợ Responsive từ 375px.
+- Sử dụng thành thạo Tailwind CSS (intermediate) và JavaScript (advanced).
+- Yêu cầu bắt buộc có kinh nghiệm làm việc với TypeScript (intermediate) và React (intermediate).
+- Sử dụng Git thành thạo trong môi trường làm việc nhóm (intermediate).
+- Điểm cộng ưu tiên (nice to have): Biết viết Unit Testing / E2E Testing (beginner) và nắm vững Web Accessibility (beginner).

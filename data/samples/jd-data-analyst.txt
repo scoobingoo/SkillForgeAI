@@ -1,0 +1,7 @@
+TUYỂN DỤNG: CHUYÊN VIÊN PHÂN TÍCH DỮ LIỆU (DATA ANALYST)
+
+Yêu cầu công việc:
+- Thành thạo truy vấn SQL chuyên sâu (advanced) và làm việc với hệ quản trị PostgreSQL (intermediate).
+- Sử dụng tốt ngôn ngữ Python (intermediate) và kỹ năng Data Analysis (advanced) với Pandas.
+- Bắt buộc có kỹ năng xây dựng báo cáo trực quan bằng Power BI hoặc Tableau (intermediate).
+- Nắm vững kiến thức xác suất thống kê và A/B Testing (intermediate).

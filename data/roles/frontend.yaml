@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: CC-BY-4.0
+slug: frontend
+title: Kỹ sư Frontend (Frontend Developer)
+description: Xây dựng giao diện web tương tác, tối ưu hiệu năng, đáp ứng đa thiết bị (Responsive) và chuẩn tiếp cận (Accessibility).
+skills:
+  - slug: html5
+    level: advanced
+    importance: required
+    evidence: "Thành thạo HTML5 ngữ nghĩa (Semantic HTML), tối ưu SEO và cấu trúc DOM chuẩn."
+  - slug: css3
+    level: advanced
+    importance: required
+    evidence: "Làm chủ CSS3, Flexbox, Grid, thiết kế Responsive từ màn hình 375px và Dark Mode."
+  - slug: tailwind-css
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng thành thạo Tailwind CSS để xây dựng hệ thống Design System đồng nhất."
+  - slug: javascript
+    level: advanced
+    importance: required
+    evidence: "Nắm vững JavaScript (ES6+), bất đồng bộ (Promise/Async-Await), xử lý sự kiện DOM và Fetch/SSE."
+  - slug: typescript
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng TypeScript ở chế độ strict để đảm bảo an toàn kiểu dữ liệu trên giao diện."
+  - slug: react
+    level: intermediate
+    importance: required
+    evidence: "Có kinh nghiệm phát triển SPA/SSR với React hoặc các kiến trúc component hiện đại."
+  - slug: git
+    level: intermediate
+    importance: required
+    evidence: "Sử dụng Git thành thạo, tuân thủ quy ước Conventional Commits và quy trình Pull Request."
+  - slug: unit-testing
+    level: beginner
+    importance: nice_to_have
+    evidence: "Ưu tiên ứng viên biết viết Unit Test hoặc E2E Test (Playwright/Vitest) cho giao diện."
+  - slug: web-accessibility
+    level: beginner
+    importance: nice_to_have
+    evidence: "Điểm cộng nếu hiểu biết về tiêu chuẩn WCAG và ARIA cho người dùng khuyết tật."
