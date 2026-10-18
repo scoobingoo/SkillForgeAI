@@ -113,7 +113,7 @@ class ReportController extends Controller
                 'Content-Type' => 'text/event-stream',
                 'Cache-Control' => 'no-cache',
                 'Connection' => 'keep-alive',
-                
+                'X-Accel-Buffering' => 'no',
             ]);
         }
 
