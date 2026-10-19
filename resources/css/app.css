@@ -1,0 +1,23 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+/* Tệp CSS chính cấu hình Tailwind CSS 4, biến màu Dark Mode và hiệu ứng Skeleton Loading */
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+/* Hiệu ứng shimmer cho Skeleton Loading khi chờ AI xử lý */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.skeleton-loading {
+  animation: pulse-subtle 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
