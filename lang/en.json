@@ -1,0 +1,14 @@
+{
+  "SkillForge AI": "SkillForge AI",
+  "AI Career Coach": "SkillForge AI",
+  "Trang chủ": "Home",
+  "Bắt đầu phân tích": "Analyze CV",
+  "Dùng CV mẫu": "Try Sample CV",
+  "Cài đặt": "Settings",
+  "Tài liệu API": "API Docs",
+  "Đang tải model AI…": "Initializing AI models (qwen3:4b & bge-m3)… Analysis tasks will automatically proceed once ready.",
+  "Cố vấn Nghề nghiệp AI Nguồn mở cho Sinh viên": "AI-Powered Skill Gap Analyzer & Adaptive Career Intelligence",
+  "Phân tích khoảng cách kỹ năng từ CV & JD với trích dẫn nguyên văn, gợi ý lộ trình học tập RAG chuẩn xác và luyện phỏng vấn thích ứng — hoàn toàn chạy local với Ollama.": "Benchmark your CV against real-world job descriptions with verbatim evidence verification, generate RRF Hybrid RAG study roadmaps, and practice adaptive technical interviews — 100% local via Ollama.",
+  "Đã lưu cài đặt thành công!": "Settings saved successfully!",
+  "Đã xoá toàn bộ hồ sơ CV và dữ liệu liên quan.": "All CV profiles and related records have been purged."
+}
