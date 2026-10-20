@@ -1,0 +1,14 @@
+{
+  "SkillForge AI": "SkillForge AI",
+  "AI Career Coach": "SkillForge AI",
+  "Trang chủ": "Trang chủ",
+  "Bắt đầu phân tích": "Bắt đầu phân tích",
+  "Dùng CV mẫu": "Dùng CV mẫu",
+  "Cài đặt": "Cài đặt",
+  "Tài liệu API": "Tài liệu API",
+  "Đang tải model AI…": "Đang khởi tạo model AI (qwen3:4b & bge-m3)… Một số tác vụ phân tích sẽ tự động bắt đầu ngay khi hoàn tất.",
+  "Cố vấn Nghề nghiệp AI Nguồn mở cho Sinh viên": "Nền tảng Phân tích Khoảng cách Kỹ năng & Lộ trình Sự nghiệp bằng AI",
+  "Phân tích khoảng cách kỹ năng từ CV & JD với trích dẫn nguyên văn, gợi ý lộ trình học tập RAG chuẩn xác và luyện phỏng vấn thích ứng — hoàn toàn chạy local với Ollama.": "Đối chiếu năng lực thực tế từ CV với yêu cầu tuyển dụng (JD) kèm bằng chứng nguyên văn, thiết kế lộ trình học tập Hybrid RAG và luyện phỏng vấn kỹ thuật thích ứng — 100% chạy cục bộ với Ollama.",
+  "Đã lưu cài đặt thành công!": "Đã lưu cài đặt thành công!",
+  "Đã xoá toàn bộ hồ sơ CV và dữ liệu liên quan.": "Đã xoá toàn bộ hồ sơ CV và dữ liệu liên quan."
+}
