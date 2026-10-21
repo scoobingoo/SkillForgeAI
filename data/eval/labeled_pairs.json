@@ -1,0 +1,55 @@
+[
+  {
+    "id": "pair-01",
+    "cv_text": "Sinh viên năm 4 có 1.5 năm kinh nghiệm PHP 8, làm quen cơ bản Laravel, thành thạo HTML5, CSS3 và Tailwind CSS.",
+    "cv_skills": [
+      { "slug": "php", "name": "PHP", "category": "backend", "level": "intermediate", "evidence": "có 1.5 năm kinh nghiệm PHP 8" },
+      { "slug": "laravel", "name": "Laravel", "category": "backend", "level": "beginner", "evidence": "làm quen cơ bản Laravel" },
+      { "slug": "html5", "name": "HTML5", "category": "frontend", "level": "advanced", "evidence": "thành thạo HTML5, CSS3" },
+      { "slug": "tailwind-css", "name": "Tailwind CSS", "category": "frontend", "level": "intermediate", "evidence": "và Tailwind CSS" }
+    ],
+    "jd_requirements": [
+      { "slug": "php", "name": "PHP", "category": "backend", "level": "intermediate", "importance": "required", "evidence": "Yêu cầu PHP intermediate" },
+      { "slug": "laravel", "name": "Laravel", "category": "backend", "level": "advanced", "importance": "required", "evidence": "Yêu cầu Laravel advanced" },
+      { "slug": "postgresql", "name": "PostgreSQL", "category": "data", "level": "intermediate", "importance": "required", "evidence": "Yêu cầu PostgreSQL" },
+      { "slug": "docker", "name": "Docker", "category": "devops", "level": "intermediate", "importance": "nice_to_have", "evidence": "Ưu tiên biết Docker" }
+    ],
+    "parent_map": { "laravel": "php", "tailwind-css": "css3" },
+    "expected_gaps": ["laravel", "postgresql", "docker"]
+  },
+  {
+    "id": "pair-02",
+    "cv_text": "Thành thạo HTML5, CSS3, Tailwind CSS và JavaScript nâng cao. Đã học React cơ bản.",
+    "cv_skills": [
+      { "slug": "html5", "name": "HTML5", "category": "frontend", "level": "advanced", "evidence": "Thành thạo HTML5" },
+      { "slug": "css3", "name": "CSS3", "category": "frontend", "level": "advanced", "evidence": "CSS3, Tailwind CSS" },
+      { "slug": "javascript", "name": "JavaScript", "category": "frontend", "level": "advanced", "evidence": "JavaScript nâng cao" },
+      { "slug": "react", "name": "React", "category": "frontend", "level": "beginner", "evidence": "Đã học React cơ bản" }
+    ],
+    "jd_requirements": [
+      { "slug": "html5", "name": "HTML5", "category": "frontend", "level": "advanced", "importance": "required", "evidence": "HTML5 advanced" },
+      { "slug": "javascript", "name": "JavaScript", "category": "frontend", "level": "advanced", "importance": "required", "evidence": "JavaScript advanced" },
+      { "slug": "react", "name": "React", "category": "frontend", "level": "intermediate", "importance": "required", "evidence": "React intermediate" },
+      { "slug": "typescript", "name": "TypeScript", "category": "frontend", "level": "intermediate", "importance": "required", "evidence": "TypeScript intermediate" }
+    ],
+    "parent_map": { "react": "javascript", "typescript": "javascript" },
+    "expected_gaps": ["react", "typescript"]
+  },
+  {
+    "id": "pair-03",
+    "cv_text": "Có kinh nghiệm Python trung bình, truy vấn SQL và cơ bản về Data Analysis với Pandas.",
+    "cv_skills": [
+      { "slug": "python", "name": "Python", "category": "backend", "level": "intermediate", "evidence": "Có kinh nghiệm Python trung bình" },
+      { "slug": "sql", "name": "SQL", "category": "data", "level": "intermediate", "evidence": "truy vấn SQL" },
+      { "slug": "data-analysis", "name": "Data Analysis", "category": "data", "level": "beginner", "evidence": "cơ bản về Data Analysis với Pandas" }
+    ],
+    "jd_requirements": [
+      { "slug": "sql", "name": "SQL", "category": "data", "level": "advanced", "importance": "required", "evidence": "SQL advanced" },
+      { "slug": "python", "name": "Python", "category": "backend", "level": "intermediate", "importance": "required", "evidence": "Python intermediate" },
+      { "slug": "data-analysis", "name": "Data Analysis", "category": "data", "level": "advanced", "importance": "required", "evidence": "Data Analysis advanced" },
+      { "slug": "bi-tools", "name": "BI Tools", "category": "data", "level": "intermediate", "importance": "required", "evidence": "Power BI / Tableau" }
+    ],
+    "parent_map": { "data-analysis": "python" },
+    "expected_gaps": ["sql", "data-analysis", "bi-tools"]
+  }
+]
