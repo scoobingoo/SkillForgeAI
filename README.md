@@ -1,5 +1,6 @@
 # ⚡ SkillForge AI — Evidence-Grounded Skill Gap Analyzer, Hybrid RAG Roadmap & Adaptive Interview Platform
 
+[![CI](https://github.com/scoobingoo/SkillForgeAI/actions/workflows/ci.yml/badge.svg)](https://github.com/scoobingoo/SkillForgeAI/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-emerald.svg)](./data/LICENSE)
 [![Stack: Laravel 11 + Tailwind CSS v4 + pgvector + Ollama](https://img.shields.io/badge/Stack-Laravel_11_%7C_Tailwind_v4_%7C_pgvector_%7C_Ollama-4f46e5.svg)](#)
