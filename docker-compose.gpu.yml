@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: Apache-2.0
+# Cấu hình bổ sung khi chạy trên máy có GPU NVIDIA (ví dụ khi demo chung kết với qwen3:8b)
+# Chạy bằng: docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
+
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  ollama-init:
+    environment:
+      LLM_MODEL: ${LLM_MODEL:-qwen3:8b}
+      EMBED_MODEL: ${EMBED_MODEL:-bge-m3}
+
+  web:
+    environment:
+      LLM_MODEL: ${LLM_MODEL:-qwen3:8b}
+
+  worker:
+    environment:
+      LLM_MODEL: ${LLM_MODEL:-qwen3:8b}

@@ -1,0 +1,81 @@
+# SPDX-License-Identifier: Apache-2.0
+# Quy trình CI tự động: cài đặt phụ thuộc -> kiểm tra chuẩn code -> chạy Unit/Feature test với FakeLlmProvider -> build frontend
+
+name: CI
+
+on:
+  push:
+    branches: [main, master, "feat/**", "fix/**"]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-and-build:
+    name: PHP 8.3 & Tailwind Build (FakeLlmProvider)
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: acc
+          POSTGRES_PASSWORD: acc
+          POSTGRES_DB: acc_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP 8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          extensions: mbstring, pdo, pdo_pgsql, pgsql, pdo_sqlite, sqlite3, zip
+          coverage: none
+
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Verify OSI-Approved Licenses
+        run: |
+          composer licenses --format=json > licenses.json
+          php -r '
+            $data = json_decode(file_get_contents("licenses.json"), true);
+            $forbidden = ["SSPL", "BSL", "Commons Clause"];
+            foreach (($data["dependencies"] ?? []) as $pkg => $info) {
+              $lics = implode(",", (array)($info["license"] ?? []));
+              foreach ($forbidden as $bad) {
+                if (stripos($lics, $bad) !== false) {
+                  fwrite(STDERR, "Forbidden license on $pkg: $lics\n");
+                  exit(1);
+                }
+              }
+            }
+            echo "All PHP dependencies use OSI-compliant open-source licenses.\n";
+          '
+
+      - name: Check PSR-12 Code Formatting (Laravel Pint)
+        run: vendor/bin/pint --test
+
+      - name: Run Unit & Feature Tests (FakeLlmProvider - No external AI calls)
+        env:
+          APP_ENV: testing
+          LLM_PROVIDER: fake
+        run: vendor/bin/phpunit
+
+      - name: Install Frontend dependencies & Build Tailwind CSS
+        run: |
+          npm install
+          npm run build

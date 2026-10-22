@@ -1,0 +1,10 @@
+# Loại trừ thư mục phụ thuộc trên máy host để tránh xung đột với bản build trong Docker
+/vendor
+/node_modules
+/public/build
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
+/bootstrap/cache/*.php
+.git

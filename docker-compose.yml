@@ -1,0 +1,93 @@
+# SPDX-License-Identifier: Apache-2.0
+# Chạy toàn bộ hệ thống bằng 1 lệnh: cp .env.example .env && docker compose up -d
+# Mở trình duyệt tại: http://localhost:3000
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USERNAME:-acc}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-acc}
+      POSTGRES_DB: ${DB_DATABASE:-acc}
+    ports:
+      - "${DB_EXPOSE_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-acc} -d ${DB_DATABASE:-acc}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollamadata:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  ollama-init:
+    image: ollama/ollama:latest
+    restart: "no"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      LLM_MODEL: ${LLM_MODEL:-qwen3:4b}
+      EMBED_MODEL: ${EMBED_MODEL:-bge-m3}
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        echo "Đang tải model chat $${LLM_MODEL} và embedding $${EMBED_MODEL}..."
+        ollama pull "$${LLM_MODEL}"
+        ollama pull "$${EMBED_MODEL}"
+        echo "Hoàn tất tải các model AI mở!"
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      DB_HOST: postgres
+      DATABASE_URL: postgres://acc:acc@postgres:5432/acc
+      LLM_BASE_URL: http://ollama:11434/v1
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    command: ["php", "artisan", "serve", "--host=0.0.0.0", "--port=3000"]
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      web:
+        condition: service_started
+    env_file:
+      - .env
+    environment:
+      DB_HOST: postgres
+      DATABASE_URL: postgres://acc:acc@postgres:5432/acc
+      LLM_BASE_URL: http://ollama:11434/v1
+    command: ["php", "artisan", "queue:work", "--tries=2", "--timeout=180", "--sleep=2"]
+
+volumes:
+  pgdata:
+  ollamadata:
